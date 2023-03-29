@@ -1,0 +1,4483 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "Mdes"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "Mdes"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MdesCardState",
+        "printedName": "MdesCardState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "activated",
+            "printedName": "activated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesCardState.Type) -> Mdes.MdesCardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesCardState",
+                    "printedName": "Mdes.MdesCardState",
+                    "usr": "c:@M@Mdes@E@MdesCardState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesCardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesCardState",
+                        "printedName": "Mdes.MdesCardState",
+                        "usr": "c:@M@Mdes@E@MdesCardState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@MdesCardState@MdesCardStateActivated",
+            "mangledName": "$s4Mdes0A9CardStateO9activatedyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "requiresActivation",
+            "printedName": "requiresActivation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesCardState.Type) -> Mdes.MdesCardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesCardState",
+                    "printedName": "Mdes.MdesCardState",
+                    "usr": "c:@M@Mdes@E@MdesCardState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesCardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesCardState",
+                        "printedName": "Mdes.MdesCardState",
+                        "usr": "c:@M@Mdes@E@MdesCardState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@MdesCardState@MdesCardStateRequiresActivation",
+            "mangledName": "$s4Mdes0A9CardStateO18requiresActivationyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "activating",
+            "printedName": "activating",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesCardState.Type) -> Mdes.MdesCardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesCardState",
+                    "printedName": "Mdes.MdesCardState",
+                    "usr": "c:@M@Mdes@E@MdesCardState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesCardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesCardState",
+                        "printedName": "Mdes.MdesCardState",
+                        "usr": "c:@M@Mdes@E@MdesCardState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@MdesCardState@MdesCardStateActivating",
+            "mangledName": "$s4Mdes0A9CardStateO10activatingyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "suspended",
+            "printedName": "suspended",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesCardState.Type) -> Mdes.MdesCardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesCardState",
+                    "printedName": "Mdes.MdesCardState",
+                    "usr": "c:@M@Mdes@E@MdesCardState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesCardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesCardState",
+                        "printedName": "Mdes.MdesCardState",
+                        "usr": "c:@M@Mdes@E@MdesCardState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@MdesCardState@MdesCardStateSuspended",
+            "mangledName": "$s4Mdes0A9CardStateO9suspendedyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "deactivated",
+            "printedName": "deactivated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesCardState.Type) -> Mdes.MdesCardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesCardState",
+                    "printedName": "Mdes.MdesCardState",
+                    "usr": "c:@M@Mdes@E@MdesCardState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesCardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesCardState",
+                        "printedName": "Mdes.MdesCardState",
+                        "usr": "c:@M@Mdes@E@MdesCardState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@MdesCardState@MdesCardStateDeactivated",
+            "mangledName": "$s4Mdes0A9CardStateO11deactivatedyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "unprovisioned",
+            "printedName": "unprovisioned",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesCardState.Type) -> Mdes.MdesCardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesCardState",
+                    "printedName": "Mdes.MdesCardState",
+                    "usr": "c:@M@Mdes@E@MdesCardState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesCardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesCardState",
+                        "printedName": "Mdes.MdesCardState",
+                        "usr": "c:@M@Mdes@E@MdesCardState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@MdesCardState@MdesCardStateUnprovisioned",
+            "mangledName": "$s4Mdes0A9CardStateO13unprovisionedyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "unavailable",
+            "printedName": "unavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesCardState.Type) -> Mdes.MdesCardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesCardState",
+                    "printedName": "Mdes.MdesCardState",
+                    "usr": "c:@M@Mdes@E@MdesCardState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesCardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesCardState",
+                        "printedName": "Mdes.MdesCardState",
+                        "usr": "c:@M@Mdes@E@MdesCardState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@MdesCardState@MdesCardStateUnavailable",
+            "mangledName": "$s4Mdes0A9CardStateO11unavailableyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mdes.MdesCardState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesCardState",
+                    "printedName": "Mdes.MdesCardState",
+                    "usr": "c:@M@Mdes@E@MdesCardState"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Mdes0A9CardStateO8rawValueACSgSi_tcfc",
+            "mangledName": "$s4Mdes0A9CardStateO8rawValueACSgSi_tcfc",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A9CardStateO8rawValueSivp",
+            "mangledName": "$s4Mdes0A9CardStateO8rawValueSivp",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A9CardStateO8rawValueSivg",
+                "mangledName": "$s4Mdes0A9CardStateO8rawValueSivg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Mdes.MdesCardState]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesCardState",
+                    "printedName": "Mdes.MdesCardState",
+                    "usr": "c:@M@Mdes@E@MdesCardState"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A9CardStateO8allCasesSayACGvpZ",
+            "mangledName": "$s4Mdes0A9CardStateO8allCasesSayACGvpZ",
+            "moduleName": "Mdes",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Mdes.MdesCardState]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesCardState",
+                        "printedName": "Mdes.MdesCardState",
+                        "usr": "c:@M@Mdes@E@MdesCardState"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A9CardStateO8allCasesSayACGvgZ",
+                "mangledName": "$s4Mdes0A9CardStateO8allCasesSayACGvgZ",
+                "moduleName": "Mdes",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Mdes@E@MdesCardState",
+        "mangledName": "$s4Mdes0A9CardStateO",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Mdes.MdesCardState]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesCardState",
+                        "printedName": "Mdes.MdesCardState",
+                        "usr": "c:@M@Mdes@E@MdesCardState"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MdesSdkError",
+        "printedName": "MdesSdkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkNotSetUp",
+            "printedName": "sdkNotSetUp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesSdkError.Type) -> Mdes.MdesSdkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesSdkError",
+                    "printedName": "Mdes.MdesSdkError",
+                    "usr": "s:4Mdes0A8SdkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesSdkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesSdkError",
+                        "printedName": "Mdes.MdesSdkError",
+                        "usr": "s:4Mdes0A8SdkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Mdes0A8SdkErrorO11sdkNotSetUpyA2CmF",
+            "mangledName": "$s4Mdes0A8SdkErrorO11sdkNotSetUpyA2CmF",
+            "moduleName": "Mdes"
+          },
+          {
+            "kind": "Var",
+            "name": "appleWalletUnavailable",
+            "printedName": "appleWalletUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesSdkError.Type) -> (Swift.String) -> Mdes.MdesSdkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> Mdes.MdesSdkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesSdkError",
+                        "printedName": "Mdes.MdesSdkError",
+                        "usr": "s:4Mdes0A8SdkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesSdkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesSdkError",
+                        "printedName": "Mdes.MdesSdkError",
+                        "usr": "s:4Mdes0A8SdkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Mdes0A8SdkErrorO22appleWalletUnavailableyACSScACmF",
+            "mangledName": "$s4Mdes0A8SdkErrorO22appleWalletUnavailableyACSScACmF",
+            "moduleName": "Mdes"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4Mdes0A8SdkErrorO",
+        "mangledName": "$s4Mdes0A8SdkErrorO",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MdesProvisioningError",
+        "printedName": "MdesProvisioningError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "appleWalletError",
+            "printedName": "appleWalletError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesProvisioningError.Type) -> (Swift.String) -> Mdes.MdesProvisioningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> Mdes.MdesProvisioningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesProvisioningError",
+                        "printedName": "Mdes.MdesProvisioningError",
+                        "usr": "s:4Mdes0A17ProvisioningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesProvisioningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesProvisioningError",
+                        "printedName": "Mdes.MdesProvisioningError",
+                        "usr": "s:4Mdes0A17ProvisioningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Mdes0A17ProvisioningErrorO011appleWalletC0yACSScACmF",
+            "mangledName": "$s4Mdes0A17ProvisioningErrorO011appleWalletC0yACSScACmF",
+            "moduleName": "Mdes"
+          },
+          {
+            "kind": "Var",
+            "name": "userCancelled",
+            "printedName": "userCancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesProvisioningError.Type) -> Mdes.MdesProvisioningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MdesProvisioningError",
+                    "printedName": "Mdes.MdesProvisioningError",
+                    "usr": "s:4Mdes0A17ProvisioningErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesProvisioningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesProvisioningError",
+                        "printedName": "Mdes.MdesProvisioningError",
+                        "usr": "s:4Mdes0A17ProvisioningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Mdes0A17ProvisioningErrorO13userCancelledyA2CmF",
+            "mangledName": "$s4Mdes0A17ProvisioningErrorO13userCancelledyA2CmF",
+            "moduleName": "Mdes"
+          },
+          {
+            "kind": "Var",
+            "name": "serverCallFailed",
+            "printedName": "serverCallFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesProvisioningError.Type) -> (Swift.String) -> Mdes.MdesProvisioningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> Mdes.MdesProvisioningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesProvisioningError",
+                        "printedName": "Mdes.MdesProvisioningError",
+                        "usr": "s:4Mdes0A17ProvisioningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesProvisioningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesProvisioningError",
+                        "printedName": "Mdes.MdesProvisioningError",
+                        "usr": "s:4Mdes0A17ProvisioningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Mdes0A17ProvisioningErrorO16serverCallFailedyACSScACmF",
+            "mangledName": "$s4Mdes0A17ProvisioningErrorO16serverCallFailedyACSScACmF",
+            "moduleName": "Mdes"
+          },
+          {
+            "kind": "Var",
+            "name": "provisioningError",
+            "printedName": "provisioningError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.MdesProvisioningError.Type) -> (Swift.String) -> Mdes.MdesProvisioningError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> Mdes.MdesProvisioningError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesProvisioningError",
+                        "printedName": "Mdes.MdesProvisioningError",
+                        "usr": "s:4Mdes0A17ProvisioningErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.MdesProvisioningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesProvisioningError",
+                        "printedName": "Mdes.MdesProvisioningError",
+                        "usr": "s:4Mdes0A17ProvisioningErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Mdes0A17ProvisioningErrorO012provisioningC0yACSScACmF",
+            "mangledName": "$s4Mdes0A17ProvisioningErrorO012provisioningC0yACSScACmF",
+            "moduleName": "Mdes"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4Mdes0A17ProvisioningErrorO",
+        "mangledName": "$s4Mdes0A17ProvisioningErrorO",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MdesCard",
+        "printedName": "MdesCard",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cardId",
+            "printedName": "cardId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A4CardC6cardIdSSvp",
+            "mangledName": "$s4Mdes0A4CardC6cardIdSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A4CardC6cardIdSSvg",
+                "mangledName": "$s4Mdes0A4CardC6cardIdSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardLastFourDigit",
+            "printedName": "cardLastFourDigit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A4CardC17cardLastFourDigitSSvp",
+            "mangledName": "$s4Mdes0A4CardC17cardLastFourDigitSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A4CardC17cardLastFourDigitSSvg",
+                "mangledName": "$s4Mdes0A4CardC17cardLastFourDigitSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardHolderName",
+            "printedName": "cardHolderName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A4CardC14cardHolderNameSSSgvp",
+            "mangledName": "$s4Mdes0A4CardC14cardHolderNameSSSgvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A4CardC14cardHolderNameSSSgvg",
+                "mangledName": "$s4Mdes0A4CardC14cardHolderNameSSSgvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardProviderName",
+            "printedName": "cardProviderName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A4CardC16cardProviderNameSSSgvp",
+            "mangledName": "$s4Mdes0A4CardC16cardProviderNameSSSgvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A4CardC16cardProviderNameSSSgvg",
+                "mangledName": "$s4Mdes0A4CardC16cardProviderNameSSSgvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cardId:cardLastFourDigit:cardHolderName:cardProviderName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MdesCard",
+                "printedName": "Mdes.MdesCard",
+                "usr": "c:@M@Mdes@objc(cs)MdesCard"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Mdes@objc(cs)MdesCard(im)initWithCardId:cardLastFourDigit:cardHolderName:cardProviderName:",
+            "mangledName": "$s4Mdes0A4CardC6cardId0C13LastFourDigit0C10HolderName0c8ProviderI0ACSS_S2SSgAHtcfc",
+            "moduleName": "Mdes",
+            "objc_name": "initWithCardId:cardLastFourDigit:cardHolderName:cardProviderName:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MdesCard",
+                "printedName": "Mdes.MdesCard",
+                "usr": "c:@M@Mdes@objc(cs)MdesCard"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Mdes@objc(cs)MdesCard(im)init",
+            "mangledName": "$s4Mdes0A4CardCACycfc",
+            "moduleName": "Mdes",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Mdes@objc(cs)MdesCard",
+        "mangledName": "$s4Mdes0A4CardC",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "Mdes"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardTokenizationRequest",
+        "printedName": "CardTokenizationRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "walletType",
+            "printedName": "walletType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes23CardTokenizationRequestV10walletTypeSSvp",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV10walletTypeSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes23CardTokenizationRequestV10walletTypeSSvg",
+                "mangledName": "$s4Mdes23CardTokenizationRequestV10walletTypeSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mode",
+            "printedName": "mode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes23CardTokenizationRequestV4modeSSvp",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV4modeSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes23CardTokenizationRequestV4modeSSvg",
+                "mangledName": "$s4Mdes23CardTokenizationRequestV4modeSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "publicCertificate",
+            "printedName": "publicCertificate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes23CardTokenizationRequestV17publicCertificateSSvp",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV17publicCertificateSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes23CardTokenizationRequestV17publicCertificateSSvg",
+                "mangledName": "$s4Mdes23CardTokenizationRequestV17publicCertificateSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "certificates",
+            "printedName": "certificates",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes23CardTokenizationRequestV12certificatesSaySSGvp",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV12certificatesSaySSGvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes23CardTokenizationRequestV12certificatesSaySSGvg",
+                "mangledName": "$s4Mdes23CardTokenizationRequestV12certificatesSaySSGvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nonce",
+            "printedName": "nonce",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes23CardTokenizationRequestV5nonceSSvp",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV5nonceSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes23CardTokenizationRequestV5nonceSSvg",
+                "mangledName": "$s4Mdes23CardTokenizationRequestV5nonceSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nonceSignature",
+            "printedName": "nonceSignature",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes23CardTokenizationRequestV14nonceSignatureSSvp",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV14nonceSignatureSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes23CardTokenizationRequestV14nonceSignatureSSvg",
+                "mangledName": "$s4Mdes23CardTokenizationRequestV14nonceSignatureSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clientId",
+            "printedName": "clientId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes23CardTokenizationRequestV8clientIdSSvp",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV8clientIdSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes23CardTokenizationRequestV8clientIdSSvg",
+                "mangledName": "$s4Mdes23CardTokenizationRequestV8clientIdSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applicationIdentifier",
+            "printedName": "applicationIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes23CardTokenizationRequestV21applicationIdentifierSSvp",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV21applicationIdentifierSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes23CardTokenizationRequestV21applicationIdentifierSSvg",
+                "mangledName": "$s4Mdes23CardTokenizationRequestV21applicationIdentifierSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(publicCertificate:certificates:nonce:nonceSignature:clientId:applicationIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardTokenizationRequest",
+                "printedName": "Mdes.CardTokenizationRequest",
+                "usr": "s:4Mdes23CardTokenizationRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Mdes23CardTokenizationRequestV17publicCertificate12certificates5nonce0H9Signature8clientId21applicationIdentifierACSS_SaySSGS4Stcfc",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV17publicCertificate12certificates5nonce0H9Signature8clientId21applicationIdentifierACSS_SaySSGS4Stcfc",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardTokenizationRequest",
+                "printedName": "Mdes.CardTokenizationRequest",
+                "usr": "s:4Mdes23CardTokenizationRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Mdes23CardTokenizationRequestV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Mdes23CardTokenizationRequestV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s4Mdes23CardTokenizationRequestV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:4Mdes23CardTokenizationRequestV",
+        "mangledName": "$s4Mdes23CardTokenizationRequestV",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardTokenizationResponse",
+        "printedName": "CardTokenizationResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "activationData",
+            "printedName": "activationData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes24CardTokenizationResponseC14activationDataSSvp",
+            "mangledName": "$s4Mdes24CardTokenizationResponseC14activationDataSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes24CardTokenizationResponseC14activationDataSSvg",
+                "mangledName": "$s4Mdes24CardTokenizationResponseC14activationDataSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "encryptedPassData",
+            "printedName": "encryptedPassData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes24CardTokenizationResponseC17encryptedPassDataSSvp",
+            "mangledName": "$s4Mdes24CardTokenizationResponseC17encryptedPassDataSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes24CardTokenizationResponseC17encryptedPassDataSSvg",
+                "mangledName": "$s4Mdes24CardTokenizationResponseC17encryptedPassDataSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ephemeralPublicKey",
+            "printedName": "ephemeralPublicKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes24CardTokenizationResponseC18ephemeralPublicKeySSvp",
+            "mangledName": "$s4Mdes24CardTokenizationResponseC18ephemeralPublicKeySSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes24CardTokenizationResponseC18ephemeralPublicKeySSvg",
+                "mangledName": "$s4Mdes24CardTokenizationResponseC18ephemeralPublicKeySSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "networkName",
+            "printedName": "networkName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes24CardTokenizationResponseC11networkNameSSSgvp",
+            "mangledName": "$s4Mdes24CardTokenizationResponseC11networkNameSSSgvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes24CardTokenizationResponseC11networkNameSSSgvg",
+                "mangledName": "$s4Mdes24CardTokenizationResponseC11networkNameSSSgvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardTokenizationResponse",
+                "printedName": "Mdes.CardTokenizationResponse",
+                "usr": "s:4Mdes24CardTokenizationResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Mdes24CardTokenizationResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s4Mdes24CardTokenizationResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Mdes24CardTokenizationResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s4Mdes24CardTokenizationResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4Mdes24CardTokenizationResponseC",
+        "mangledName": "$s4Mdes24CardTokenizationResponseC",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "Mdes"
+      },
+      {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "Mdes"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ObjcMdesSdkError",
+        "printedName": "ObjcMdesSdkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkNotSetUp",
+            "printedName": "sdkNotSetUp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.ObjcMdesSdkError.Type) -> Mdes.ObjcMdesSdkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjcMdesSdkError",
+                    "printedName": "Mdes.ObjcMdesSdkError",
+                    "usr": "c:@M@Mdes@E@ObjcMdesSdkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.ObjcMdesSdkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjcMdesSdkError",
+                        "printedName": "Mdes.ObjcMdesSdkError",
+                        "usr": "c:@M@Mdes@E@ObjcMdesSdkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@ObjcMdesSdkError@ObjcMdesSdkErrorSdkNotSetUp",
+            "mangledName": "$s4Mdes04ObjcA8SdkErrorO11sdkNotSetUpyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "appleWalletUnavailable",
+            "printedName": "appleWalletUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.ObjcMdesSdkError.Type) -> Mdes.ObjcMdesSdkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjcMdesSdkError",
+                    "printedName": "Mdes.ObjcMdesSdkError",
+                    "usr": "c:@M@Mdes@E@ObjcMdesSdkError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.ObjcMdesSdkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjcMdesSdkError",
+                        "printedName": "Mdes.ObjcMdesSdkError",
+                        "usr": "c:@M@Mdes@E@ObjcMdesSdkError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@ObjcMdesSdkError@ObjcMdesSdkErrorAppleWalletUnavailable",
+            "mangledName": "$s4Mdes04ObjcA8SdkErrorO22appleWalletUnavailableyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mdes.ObjcMdesSdkError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjcMdesSdkError",
+                    "printedName": "Mdes.ObjcMdesSdkError",
+                    "usr": "c:@M@Mdes@E@ObjcMdesSdkError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Mdes04ObjcA8SdkErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s4Mdes04ObjcA8SdkErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes04ObjcA8SdkErrorO8rawValueSivp",
+            "mangledName": "$s4Mdes04ObjcA8SdkErrorO8rawValueSivp",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes04ObjcA8SdkErrorO8rawValueSivg",
+                "mangledName": "$s4Mdes04ObjcA8SdkErrorO8rawValueSivg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Mdes@E@ObjcMdesSdkError",
+        "mangledName": "$s4Mdes04ObjcA8SdkErrorO",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ObjcMdesProvisioningError",
+        "printedName": "ObjcMdesProvisioningError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "appleWalletError",
+            "printedName": "appleWalletError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.ObjcMdesProvisioningError.Type) -> Mdes.ObjcMdesProvisioningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjcMdesProvisioningError",
+                    "printedName": "Mdes.ObjcMdesProvisioningError",
+                    "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.ObjcMdesProvisioningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjcMdesProvisioningError",
+                        "printedName": "Mdes.ObjcMdesProvisioningError",
+                        "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError@ObjcMdesProvisioningErrorAppleWalletError",
+            "mangledName": "$s4Mdes04ObjcA17ProvisioningErrorO011appleWalletD0yA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "userCancelled",
+            "printedName": "userCancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.ObjcMdesProvisioningError.Type) -> Mdes.ObjcMdesProvisioningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjcMdesProvisioningError",
+                    "printedName": "Mdes.ObjcMdesProvisioningError",
+                    "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.ObjcMdesProvisioningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjcMdesProvisioningError",
+                        "printedName": "Mdes.ObjcMdesProvisioningError",
+                        "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError@ObjcMdesProvisioningErrorUserCancelled",
+            "mangledName": "$s4Mdes04ObjcA17ProvisioningErrorO13userCancelledyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "serverCallFailed",
+            "printedName": "serverCallFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.ObjcMdesProvisioningError.Type) -> Mdes.ObjcMdesProvisioningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjcMdesProvisioningError",
+                    "printedName": "Mdes.ObjcMdesProvisioningError",
+                    "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.ObjcMdesProvisioningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjcMdesProvisioningError",
+                        "printedName": "Mdes.ObjcMdesProvisioningError",
+                        "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError@ObjcMdesProvisioningErrorServerCallFailed",
+            "mangledName": "$s4Mdes04ObjcA17ProvisioningErrorO16serverCallFailedyA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "provisioningError",
+            "printedName": "provisioningError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mdes.ObjcMdesProvisioningError.Type) -> Mdes.ObjcMdesProvisioningError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjcMdesProvisioningError",
+                    "printedName": "Mdes.ObjcMdesProvisioningError",
+                    "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mdes.ObjcMdesProvisioningError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjcMdesProvisioningError",
+                        "printedName": "Mdes.ObjcMdesProvisioningError",
+                        "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError@ObjcMdesProvisioningErrorProvisioningError",
+            "mangledName": "$s4Mdes04ObjcA17ProvisioningErrorO012provisioningD0yA2CmF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mdes.ObjcMdesProvisioningError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjcMdesProvisioningError",
+                    "printedName": "Mdes.ObjcMdesProvisioningError",
+                    "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Mdes04ObjcA17ProvisioningErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s4Mdes04ObjcA17ProvisioningErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes04ObjcA17ProvisioningErrorO8rawValueSivp",
+            "mangledName": "$s4Mdes04ObjcA17ProvisioningErrorO8rawValueSivp",
+            "moduleName": "Mdes",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes04ObjcA17ProvisioningErrorO8rawValueSivg",
+                "mangledName": "$s4Mdes04ObjcA17ProvisioningErrorO8rawValueSivg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Mdes@E@ObjcMdesProvisioningError",
+        "mangledName": "$s4Mdes04ObjcA17ProvisioningErrorO",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MdesConfig",
+        "printedName": "MdesConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "programCode",
+            "printedName": "programCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A6ConfigC11programCodeSSvp",
+            "mangledName": "$s4Mdes0A6ConfigC11programCodeSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A6ConfigC11programCodeSSvg",
+                "mangledName": "$s4Mdes0A6ConfigC11programCodeSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tenantCode",
+            "printedName": "tenantCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A6ConfigC10tenantCodeSSvp",
+            "mangledName": "$s4Mdes0A6ConfigC10tenantCodeSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A6ConfigC10tenantCodeSSvg",
+                "mangledName": "$s4Mdes0A6ConfigC10tenantCodeSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clientId",
+            "printedName": "clientId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A6ConfigC8clientIdSSvp",
+            "mangledName": "$s4Mdes0A6ConfigC8clientIdSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A6ConfigC8clientIdSSvg",
+                "mangledName": "$s4Mdes0A6ConfigC8clientIdSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A6ConfigC6apiKeySSvp",
+            "mangledName": "$s4Mdes0A6ConfigC6apiKeySSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A6ConfigC6apiKeySSvg",
+                "mangledName": "$s4Mdes0A6ConfigC6apiKeySSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiSecret",
+            "printedName": "apiSecret",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A6ConfigC9apiSecretSSvp",
+            "mangledName": "$s4Mdes0A6ConfigC9apiSecretSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A6ConfigC9apiSecretSSvg",
+                "mangledName": "$s4Mdes0A6ConfigC9apiSecretSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bundleId",
+            "printedName": "bundleId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Mdes0A6ConfigC8bundleIdSSvp",
+            "mangledName": "$s4Mdes0A6ConfigC8bundleIdSSvp",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Mdes0A6ConfigC8bundleIdSSvg",
+                "mangledName": "$s4Mdes0A6ConfigC8bundleIdSSvg",
+                "moduleName": "Mdes",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(programCode:clientId:apiKey:apiSecret:bundleId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MdesConfig",
+                "printedName": "Mdes.MdesConfig",
+                "usr": "c:@M@Mdes@objc(cs)MdesConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Mdes@objc(cs)MdesConfig(im)initWithProgramCode:clientId:apiKey:apiSecret:bundleId:",
+            "mangledName": "$s4Mdes0A6ConfigC11programCode8clientId6apiKey0G6Secret06bundleF0ACSS_S4Stcfc",
+            "moduleName": "Mdes",
+            "objc_name": "initWithProgramCode:clientId:apiKey:apiSecret:bundleId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MdesConfig",
+                "printedName": "Mdes.MdesConfig",
+                "usr": "c:@M@Mdes@objc(cs)MdesConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Mdes@objc(cs)MdesConfig(im)init",
+            "mangledName": "$s4Mdes0A6ConfigCACycfc",
+            "moduleName": "Mdes",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Mdes@objc(cs)MdesConfig",
+        "mangledName": "$s4Mdes0A6ConfigC",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "Mdes"
+      },
+      {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "Mdes"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MdesSdk",
+        "printedName": "MdesSdk",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MdesConfig",
+                "printedName": "Mdes.MdesConfig",
+                "usr": "c:@M@Mdes@objc(cs)MdesConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Mdes@objc(cs)MdesSdk(cm)configureWithConfig:",
+            "mangledName": "$s4Mdes0A3SdkC9configure6configyAA0A6ConfigC_tFZ",
+            "moduleName": "Mdes",
+            "static": true,
+            "objc_name": "configureWithConfig:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mdesSdk",
+            "printedName": "mdesSdk()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MdesSdk",
+                "printedName": "Mdes.MdesSdk",
+                "usr": "c:@M@Mdes@objc(cs)MdesSdk"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Mdes0A3SdkC04mdesB0ACyKFZ",
+            "mangledName": "$s4Mdes0A3SdkC04mdesB0ACyKFZ",
+            "moduleName": "Mdes",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MdesSdk",
+                "printedName": "Mdes.MdesSdk",
+                "usr": "c:@M@Mdes@objc(cs)MdesSdk"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Mdes@objc(cs)MdesSdk(im)init",
+            "mangledName": "$s4Mdes0A3SdkCACycfc",
+            "moduleName": "Mdes",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "allDevicesProvisioned",
+            "printedName": "allDevicesProvisioned(card:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MdesCard",
+                "printedName": "Mdes.MdesCard",
+                "usr": "c:@M@Mdes@objc(cs)MdesCard"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Mdes@objc(cs)MdesSdk(im)allDevicesProvisionedWithCard:",
+            "mangledName": "$s4Mdes0A3SdkC21allDevicesProvisioned4cardSbAA0A4CardC_tF",
+            "moduleName": "Mdes",
+            "objc_name": "allDevicesProvisionedWithCard:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceCardState",
+            "printedName": "deviceCardState(card:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MdesCardState",
+                "printedName": "Mdes.MdesCardState",
+                "usr": "c:@M@Mdes@E@MdesCardState"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MdesCard",
+                "printedName": "Mdes.MdesCard",
+                "usr": "c:@M@Mdes@objc(cs)MdesCard"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Mdes@objc(cs)MdesSdk(im)deviceCardStateWithCard:",
+            "mangledName": "$s4Mdes0A3SdkC15deviceCardState4cardAA0adE0OAA0aD0C_tF",
+            "moduleName": "Mdes",
+            "objc_name": "deviceCardStateWithCard:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remoteDeviceCardState",
+            "printedName": "remoteDeviceCardState(card:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MdesCardState",
+                "printedName": "Mdes.MdesCardState",
+                "usr": "c:@M@Mdes@E@MdesCardState"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MdesCard",
+                "printedName": "Mdes.MdesCard",
+                "usr": "c:@M@Mdes@objc(cs)MdesCard"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Mdes@objc(cs)MdesSdk(im)remoteDeviceCardStateWithCard:",
+            "mangledName": "$s4Mdes0A3SdkC21remoteDeviceCardState4cardAA0aeF0OAA0aE0C_tF",
+            "moduleName": "Mdes",
+            "objc_name": "remoteDeviceCardStateWithCard:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addCardToWallet",
+            "printedName": "addCardToWallet(userId:card:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MdesCard",
+                "printedName": "Mdes.MdesCard",
+                "usr": "c:@M@Mdes@objc(cs)MdesCard"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.String, Mdes.MdesProvisioningError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.String, Mdes.MdesProvisioningError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MdesProvisioningError",
+                        "printedName": "Mdes.MdesProvisioningError",
+                        "usr": "s:4Mdes0A17ProvisioningErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Mdes0A3SdkC15addCardToWallet6userId4card10completionSo16UIViewControllerCSgSS_AA0aD0Cys6ResultOySSAA0A17ProvisioningErrorOGctF",
+            "mangledName": "$s4Mdes0A3SdkC15addCardToWallet6userId4card10completionSo16UIViewControllerCSgSS_AA0aD0Cys6ResultOySSAA0A17ProvisioningErrorOGctF",
+            "moduleName": "Mdes",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Mdes@objc(cs)MdesSdk",
+        "mangledName": "$s4Mdes0A3SdkC",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mdes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "Mdes"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKAddPaymentPassViewController",
+        "printedName": "PKAddPaymentPassViewController",
+        "declKind": "Class",
+        "usr": "c:objc(cs)PKAddPaymentPassViewController",
+        "moduleName": "PassKit",
+        "isOpen": true,
+        "intro_iOS": "9.0",
+        "objc_name": "PKAddPaymentPassViewController",
+        "declAttributes": [
+          "Custom",
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKPaymentPass",
+        "printedName": "PKPaymentPass",
+        "declKind": "Class",
+        "usr": "c:objc(cs)PKPaymentPass",
+        "moduleName": "PassKit",
+        "isOpen": true,
+        "intro_iOS": "8.0",
+        "objc_name": "PKPaymentPass",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)PKSecureElementPass",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "PassKit.PKSecureElementPass",
+          "PassKit.PKPass",
+          "PassKit.PKObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKPass",
+        "printedName": "PKPass",
+        "declKind": "Class",
+        "usr": "c:objc(cs)PKPass",
+        "moduleName": "PassKit",
+        "isOpen": true,
+        "objc_name": "PKPass",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)PKObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "PassKit.PKObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKPassLibrary",
+        "printedName": "PKPassLibrary",
+        "declKind": "Class",
+        "usr": "c:objc(cs)PKPassLibrary",
+        "moduleName": "PassKit",
+        "isOpen": true,
+        "intro_iOS": "6.0",
+        "objc_name": "PKPassLibrary",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WCSession",
+        "printedName": "WCSession",
+        "declKind": "Class",
+        "usr": "c:objc(cs)WCSession",
+        "moduleName": "WatchConnectivity",
+        "isOpen": true,
+        "intro_iOS": "9.0",
+        "objc_name": "WCSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSessionDataTask",
+        "printedName": "URLSessionDataTask",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSessionDataTask",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSessionDataTask",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSURLSessionTask",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Foundation.URLSessionTask",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 249,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 254,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "Array",
+      "offset": 320,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 984,
+      "length": 43,
+      "value": "\"platform-svc-tokenization.kube.mmvpay.com\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 180,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 212,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 236,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 259,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 284,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 311,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 337,
+      "length": 4,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 180,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 212,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 236,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 259,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 284,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 311,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 337,
+      "length": 1,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCard.swift",
+      "kind": "StringLiteral",
+      "offset": 120,
+      "length": 8,
+      "value": "\"Mdes.MdesCard\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 189,
+      "length": 11,
+      "value": "\"apple_pay\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 9,
+      "value": "\"ios_sdk\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1024,
+      "length": 13,
+      "value": "\"wallet_type\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1058,
+      "length": 6,
+      "value": "\"mode\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1098,
+      "length": 20,
+      "value": "\"public_certificate\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1147,
+      "length": 14,
+      "value": "\"certificates\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1183,
+      "length": 7,
+      "value": "\"nonce\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1221,
+      "length": 17,
+      "value": "\"nonce_signature\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1263,
+      "length": 11,
+      "value": "\"client_id\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1312,
+      "length": 24,
+      "value": "\"application_identifier\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1024,
+      "length": 13,
+      "value": "\"wallet_type\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1058,
+      "length": 6,
+      "value": "\"mode\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1098,
+      "length": 20,
+      "value": "\"public_certificate\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1147,
+      "length": 14,
+      "value": "\"certificates\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1183,
+      "length": 7,
+      "value": "\"nonce\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1221,
+      "length": 17,
+      "value": "\"nonce_signature\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1263,
+      "length": 11,
+      "value": "\"client_id\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1312,
+      "length": 24,
+      "value": "\"application_identifier\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 17,
+      "value": "\"activation_data\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 21,
+      "value": "\"encrypted_pass_data\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 498,
+      "length": 22,
+      "value": "\"ephemeral_public_key\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 548,
+      "length": 14,
+      "value": "\"network_name\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 17,
+      "value": "\"activation_data\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 21,
+      "value": "\"encrypted_pass_data\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 498,
+      "length": 22,
+      "value": "\"ephemeral_public_key\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 548,
+      "length": 14,
+      "value": "\"network_name\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/PKPassLibraryHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 19,
+      "value": "\"Mdes.PKPassLibraryHelper\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 178,
+      "length": 22,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 178,
+      "length": 22,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 560,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 609,
+      "length": 17,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 560,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 609,
+      "length": 17,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 122,
+      "length": 10,
+      "value": "\"Mdes.MdesConfig\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 7,
+      "value": "\"Mdes.MdesSdk\""
+    },
+    {
+      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/CardProvisioningManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1039,
+      "length": 23,
+      "value": "\"Mdes.CardProvisioningManager\""
+    }
+  ]
+}
