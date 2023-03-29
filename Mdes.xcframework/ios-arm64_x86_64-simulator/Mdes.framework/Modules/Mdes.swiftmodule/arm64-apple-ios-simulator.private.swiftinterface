@@ -1,0 +1,127 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Mdes
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import Mdes
+import PassKit
+import Swift
+import WatchConnectivity
+import _Concurrency
+import _StringProcessing
+@objc public enum MdesCardState : Swift.Int, Swift.CaseIterable {
+  case activated = 0
+  case requiresActivation = 1
+  case activating = 2
+  case suspended = 3
+  case deactivated = 4
+  case unprovisioned = -1
+  case unavailable = -999
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [Mdes.MdesCardState]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [Mdes.MdesCardState] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum MdesSdkError : Swift.Error {
+  case sdkNotSetUp
+  case appleWalletUnavailable(Swift.String)
+}
+public enum MdesProvisioningError : Swift.Error {
+  case appleWalletError(Swift.String)
+  case userCancelled
+  case serverCallFailed(Swift.String)
+  case provisioningError(Swift.String)
+}
+@objc public class MdesCard : ObjectiveC.NSObject {
+  final public let cardId: Swift.String
+  final public let cardLastFourDigit: Swift.String
+  final public let cardHolderName: Swift.String?
+  final public let cardProviderName: Swift.String?
+  @objc public init(cardId: Swift.String, cardLastFourDigit: Swift.String, cardHolderName: Swift.String?, cardProviderName: Swift.String?)
+  @objc deinit
+}
+public struct CardTokenizationRequest : Swift.Codable {
+  public let walletType: Swift.String
+  public let mode: Swift.String
+  public let publicCertificate: Swift.String
+  public let certificates: [Swift.String]
+  public let nonce: Swift.String
+  public let nonceSignature: Swift.String
+  public let clientId: Swift.String
+  public let applicationIdentifier: Swift.String
+  public init(publicCertificate: Swift.String, certificates: [Swift.String], nonce: Swift.String, nonceSignature: Swift.String, clientId: Swift.String, applicationIdentifier: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class CardTokenizationResponse : Swift.Codable {
+  final public let activationData: Swift.String
+  final public let encryptedPassData: Swift.String
+  final public let ephemeralPublicKey: Swift.String
+  final public let networkName: Swift.String?
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public enum ObjcMdesSdkError : Swift.Int {
+  case sdkNotSetUp
+  case appleWalletUnavailable
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ObjcMdesProvisioningError : Swift.Int {
+  case appleWalletError
+  case userCancelled
+  case serverCallFailed
+  case provisioningError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class MdesConfig : ObjectiveC.NSObject {
+  final public let programCode: Swift.String
+  final public let tenantCode: Swift.String
+  final public let clientId: Swift.String
+  final public let apiKey: Swift.String
+  final public let apiSecret: Swift.String
+  final public let bundleId: Swift.String
+  @objc public init(programCode: Swift.String, clientId: Swift.String, apiKey: Swift.String, apiSecret: Swift.String, bundleId: Swift.String)
+  @objc deinit
+}
+public typealias ProvisioningResult = Swift.Result<Swift.String, Mdes.MdesProvisioningError>
+public typealias ProvisioningCompletion = ((Mdes.ProvisioningResult) -> Swift.Void)
+public typealias ProvisioningSuccess = ((Swift.String) -> Swift.Void)
+public typealias ProvisioningMdesError = ((Foundation.NSError) -> Swift.Void)
+@_hasMissingDesignatedInitializers @objc public class MdesSdk : ObjectiveC.NSObject {
+  @objc public static func configure(config: Mdes.MdesConfig)
+  public static func mdesSdk() throws -> Mdes.MdesSdk
+  @available(swift, obsoleted: 1.0)
+  @objc public static func objcMdesSdk() throws -> Mdes.MdesSdk
+  @objc deinit
+}
+extension Mdes.MdesSdk {
+  @objc dynamic public func allDevicesProvisioned(card: Mdes.MdesCard) -> Swift.Bool
+  @objc dynamic public func deviceCardState(card: Mdes.MdesCard) -> Mdes.MdesCardState
+  @objc dynamic public func remoteDeviceCardState(card: Mdes.MdesCard) -> Mdes.MdesCardState
+  public func addCardToWallet(userId: Swift.String, card: Mdes.MdesCard, completion: @escaping Mdes.ProvisioningCompletion) -> UIKit.UIViewController?
+  @available(swift, obsoleted: 1.0)
+  @objc dynamic public func addCardToWallet(userId: Swift.String, card: Mdes.MdesCard, success: @escaping Mdes.ProvisioningSuccess, failure: @escaping Mdes.ProvisioningMdesError) -> UIKit.UIViewController?
+}
+extension Mdes.MdesCardState : Swift.Equatable {}
+extension Mdes.MdesCardState : Swift.Hashable {}
+extension Mdes.MdesCardState : Swift.RawRepresentable {}
+extension Mdes.ObjcMdesSdkError : Swift.Equatable {}
+extension Mdes.ObjcMdesSdkError : Swift.Hashable {}
+extension Mdes.ObjcMdesSdkError : Swift.RawRepresentable {}
+extension Mdes.ObjcMdesProvisioningError : Swift.Equatable {}
+extension Mdes.ObjcMdesProvisioningError : Swift.Hashable {}
+extension Mdes.ObjcMdesProvisioningError : Swift.RawRepresentable {}
