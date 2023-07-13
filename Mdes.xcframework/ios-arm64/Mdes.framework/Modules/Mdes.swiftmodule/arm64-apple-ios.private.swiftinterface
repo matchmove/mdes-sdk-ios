@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Mdes
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -55,8 +55,8 @@ public struct CardTokenizationRequest : Swift.Codable {
   public let clientId: Swift.String
   public let applicationIdentifier: Swift.String
   public init(publicCertificate: Swift.String, certificates: [Swift.String], nonce: Swift.String, nonceSignature: Swift.String, clientId: Swift.String, applicationIdentifier: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class CardTokenizationResponse : Swift.Codable {
   final public let activationData: Swift.String
@@ -64,8 +64,8 @@ public struct CardTokenizationRequest : Swift.Codable {
   final public let ephemeralPublicKey: Swift.String
   final public let networkName: Swift.String?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public enum ObjcMdesSdkError : Swift.Int {
   case sdkNotSetUp
@@ -109,7 +109,7 @@ public typealias ProvisioningMdesError = ((Foundation.NSError) -> Swift.Void)
   @objc deinit
 }
 extension Mdes.MdesSdk {
-  @objc dynamic public func allDevicesProvisioned(card: Mdes.MdesCard) -> Swift.Bool
+  @objc dynamic public func getCardStatus(card: Mdes.MdesCard) -> Mdes.MdesCardState
   @objc dynamic public func deviceCardState(card: Mdes.MdesCard) -> Mdes.MdesCardState
   @objc dynamic public func remoteDeviceCardState(card: Mdes.MdesCard) -> Mdes.MdesCardState
   public func addCardToWallet(userId: Swift.String, card: Mdes.MdesCard, completion: @escaping Mdes.ProvisioningCompletion) -> UIKit.UIViewController?

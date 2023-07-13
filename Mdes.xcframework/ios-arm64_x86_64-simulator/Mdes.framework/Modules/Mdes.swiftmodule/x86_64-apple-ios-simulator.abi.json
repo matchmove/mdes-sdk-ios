@@ -3291,14 +3291,14 @@
           },
           {
             "kind": "Function",
-            "name": "allDevicesProvisioned",
-            "printedName": "allDevicesProvisioned(card:)",
+            "name": "getCardStatus",
+            "printedName": "getCardStatus(card:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "MdesCardState",
+                "printedName": "Mdes.MdesCardState",
+                "usr": "c:@M@Mdes@E@MdesCardState"
               },
               {
                 "kind": "TypeNominal",
@@ -3308,10 +3308,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@Mdes@objc(cs)MdesSdk(im)allDevicesProvisionedWithCard:",
-            "mangledName": "$s4Mdes0A3SdkC21allDevicesProvisioned4cardSbAA0A4CardC_tF",
+            "usr": "c:@CM@Mdes@objc(cs)MdesSdk(im)getCardStatusWithCard:",
+            "mangledName": "$s4Mdes0A3SdkC13getCardStatus4cardAA0aD5StateOAA0aD0C_tF",
             "moduleName": "Mdes",
-            "objc_name": "allDevicesProvisionedWithCard:",
+            "objc_name": "getCardStatusWithCard:",
             "declAttributes": [
               "Dynamic",
               "AccessControl",
@@ -4081,399 +4081,777 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 249,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 254,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
       "kind": "Array",
       "offset": 320,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 8,
+      "value": "\"%02hhX\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 399,
+      "length": 8,
+      "value": "\"%02hhx\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
       "kind": "StringLiteral",
       "offset": 984,
       "length": 43,
       "value": "\"platform-svc-tokenization.kube.mmvpay.com\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1629,
+      "length": 46,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1650,
+      "length": 1,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1674,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "Array",
+      "offset": 1756,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "Array",
+      "offset": 1844,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1872,
+      "length": 80,
+      "value": "\"-----BEGIN CERTIFICATE-----\n\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1924,
+      "length": 1,
+      "value": "\"\n-----END CERTIFICATE-----\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2858,
+      "length": 87,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2885,
+      "length": 1,
+      "value": "\"\/v1\/users\/wallets\/cards\/\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2918,
+      "length": 1,
+      "value": "\"\/tokenization\/provisioning\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3022,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3226,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3259,
+      "length": 35,
+      "value": "\"application\/x-www-form-urlencoded\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3316,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3385,
+      "length": 16,
+      "value": "\"X-Auth-User-ID\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3428,
+      "length": 7,
+      "value": "\"X-111\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3457,
+      "length": 17,
+      "value": "\"X-MM-Request-ID\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3501,
+      "length": 7,
+      "value": "\"X-112\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3530,
+      "length": 21,
+      "value": "\"X-MM-Sub-Request-ID\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3621,
+      "length": 18,
+      "value": "\"X-MM-Tenant-Code\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3697,
+      "length": 17,
+      "value": "\"X-MM-Auth-Token\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3863,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/SdkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3874,
+      "length": 5,
+      "value": "\"%2b\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Extensions\/EncodableExtension.swift",
+      "kind": "Array",
+      "offset": 314,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 180,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 212,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 236,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 259,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 284,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 311,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 4,
-      "value": "999"
+      "value": "-999"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 180,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 212,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 236,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 259,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 284,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 311,
       "length": 1,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCardState.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCardState.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 1,
-      "value": "999"
+      "value": "-999"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesCard.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Extensions\/QueryStringExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Extensions\/QueryStringExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 212,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Extensions\/QueryStringExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 224,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Extensions\/QueryStringExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 259,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Extensions\/NSErrorExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 215,
+      "length": 20,
+      "value": "\"com.matchmove.mdes\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesCard.swift",
       "kind": "StringLiteral",
       "offset": 120,
       "length": 8,
       "value": "\"Mdes.MdesCard\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 11,
       "value": "\"apple_pay\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 9,
       "value": "\"ios_sdk\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1024,
       "length": 13,
       "value": "\"wallet_type\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1058,
       "length": 6,
       "value": "\"mode\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1098,
       "length": 20,
       "value": "\"public_certificate\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1147,
       "length": 14,
       "value": "\"certificates\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1183,
       "length": 7,
       "value": "\"nonce\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1221,
       "length": 17,
       "value": "\"nonce_signature\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1263,
       "length": 11,
       "value": "\"client_id\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1312,
       "length": 24,
       "value": "\"application_identifier\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1024,
       "length": 13,
       "value": "\"wallet_type\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1058,
       "length": 6,
       "value": "\"mode\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1098,
       "length": 20,
       "value": "\"public_certificate\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1147,
       "length": 14,
       "value": "\"certificates\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1183,
       "length": 7,
       "value": "\"nonce\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1221,
       "length": 17,
       "value": "\"nonce_signature\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1263,
       "length": 11,
       "value": "\"client_id\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/RequestModels\/CardTokenizationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1312,
       "length": 24,
       "value": "\"application_identifier\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/APIManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 904,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/APIManager.swift",
+      "kind": "Array",
+      "offset": 1737,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/APIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1839,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/APIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1887,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/APIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1933,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/APIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1983,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/APIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2032,
+      "length": 11,
+      "value": "\"timestamp\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/APIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2085,
+      "length": 8,
+      "value": "\"detail\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 17,
       "value": "\"activation_data\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
       "kind": "StringLiteral",
       "offset": 442,
       "length": 21,
       "value": "\"encrypted_pass_data\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
       "kind": "StringLiteral",
       "offset": 498,
       "length": 22,
       "value": "\"ephemeral_public_key\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
       "kind": "StringLiteral",
       "offset": 548,
       "length": 14,
       "value": "\"network_name\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 17,
       "value": "\"activation_data\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
       "kind": "StringLiteral",
       "offset": 442,
       "length": 21,
       "value": "\"encrypted_pass_data\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
       "kind": "StringLiteral",
       "offset": 498,
       "length": 22,
       "value": "\"ephemeral_public_key\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/Networking\/ResponseModels\/CardTokenizationResponse.swift",
       "kind": "StringLiteral",
       "offset": 548,
       "length": 14,
       "value": "\"network_name\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/PKPassLibraryHelper.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/PKPassLibraryHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1513,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/PKPassLibraryHelper.swift",
       "kind": "StringLiteral",
       "offset": 567,
       "length": 19,
       "value": "\"Mdes.PKPassLibraryHelper\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
       "kind": "IntegerLiteral",
       "offset": 178,
       "length": 22,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "Dictionary",
+      "offset": 293,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "StringLiteral",
+      "offset": 350,
+      "length": 7,
+      "value": "\"error\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "StringLiteral",
+      "offset": 406,
+      "length": 20,
+      "value": "\"com.matchmove.mdes\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
       "kind": "IntegerLiteral",
       "offset": 178,
       "length": 22,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
       "kind": "IntegerLiteral",
       "offset": 560,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
       "kind": "IntegerLiteral",
       "offset": 583,
       "length": 16,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
       "kind": "IntegerLiteral",
       "offset": 609,
       "length": 17,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "Dictionary",
+      "offset": 719,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "StringLiteral",
+      "offset": 776,
+      "length": 7,
+      "value": "\"error\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
+      "kind": "StringLiteral",
+      "offset": 832,
+      "length": 20,
+      "value": "\"com.matchmove.mdes\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
       "kind": "IntegerLiteral",
       "offset": 560,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
       "kind": "IntegerLiteral",
       "offset": 583,
       "length": 16,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/ObjcMdesError.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/ObjcMdesError.swift",
       "kind": "IntegerLiteral",
       "offset": 609,
       "length": 17,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesConfig.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesConfig.swift",
       "kind": "StringLiteral",
       "offset": 122,
       "length": 10,
       "value": "\"Mdes.MdesConfig\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Public\/MdesSdk.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 1981,
+      "length": 46,
+      "value": "\"Apple Wallet is not available in your region\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 2232,
+      "length": 48,
+      "value": "\"Unable to intialize payment pass configuration\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesSdk.swift",
       "kind": "StringLiteral",
       "offset": 475,
       "length": 7,
       "value": "\"Mdes.MdesSdk\""
     },
     {
-      "filePath": "\/Users\/vidhyadharan\/Developer\/ios\/Mdes\/Mdes\/Internal\/CardProvisioningManager.swift",
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Public\/MdesSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 4357,
+      "length": 45,
+      "value": "\"Wallet View Controller was not initialized!\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/CardProvisioningManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3475,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/CardProvisioningManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3941,
+      "length": 67,
+      "value": "\"Card ending with \""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/CardProvisioningManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3976,
+      "length": 3,
+      "value": "\" has been added to Apple Wallet\""
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/CardProvisioningManager.swift",
+      "kind": "Array",
+      "offset": 4411,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/CardProvisioningManager.swift",
+      "kind": "Array",
+      "offset": 4521,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sarvjeetsingh\/Documents\/source\/iOS\/MDES\/Mdes\/Internal\/CardProvisioningManager.swift",
       "kind": "StringLiteral",
       "offset": 1039,
       "length": 23,
