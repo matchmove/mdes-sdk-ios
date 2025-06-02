@@ -3,7 +3,7 @@ import PackageDescription
 let package = Package(
     name: "Mdes",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v14)
     ],
     products: [
         .library(
