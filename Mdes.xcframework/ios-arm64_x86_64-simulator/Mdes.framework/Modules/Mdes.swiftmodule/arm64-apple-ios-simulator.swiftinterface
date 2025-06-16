@@ -126,6 +126,7 @@ extension Mdes.MdesSdk {
   public func passEntries(cardListArray: [Mdes.MdesCard], completion: @escaping ([PassKit.PKIssuerProvisioningExtensionPassEntry]) -> Swift.Void)
   public func getCardsProvisioningStatus(cardListArray: [Mdes.MdesCard]) -> Swift.String
   public func remotePassEntries(cardListArray: [Mdes.MdesCard], completion: @escaping ([PassKit.PKIssuerProvisioningExtensionPassEntry]) -> Swift.Void)
+  public func lastFourDigit(cardnumber: Swift.String?) -> Swift.String
 }
 extension Mdes.MdesCardState : Swift.Equatable {}
 extension Mdes.MdesCardState : Swift.Hashable {}
