@@ -394,24 +394,28 @@ Show or Hide the **Add to Wallet** button by checking if the card has been provi
 
 
 #### 7.3 Error codes and messages from MdesProvisioningError / ObjcMdesProvisioningError:**
-- **MdesProvisioningError.appleWalletError / ObjcMdesProvisioningErrorAppleWalletError:** The following error messages are returned as part of error.
+
+
+- **7.3.1MdesProvisioningError.appleWalletError / ObjcMdesProvisioningErrorAppleWalletError:** The following error messages are returned as part of error.
 "Wallet View Controller was not initialized! ⚠️" .
 
-- **MdesProvisioningError.serverCallFailed / ObjcMdesProvisioningErrorServerCallFailed:** Bad Request - http 400
 
-Invalid user | Invalid card | Missing user id on header | Invalid consumer | card detail not found for: %s | Invalid value for field %s | network not supported | unsupported card type | expiry date is in invalid format. Must be in YYYY-MM | cannot proceed verification due to missing or invalid configuration details
+- **7.3.2MdesProvisioningError.serverCallFailed / ObjcMdesProvisioningErrorServerCallFailed:** 
 
-Unauthorized - http 401
- mastercard_authorization_failed | Authorization failed
+Bad Request - **http 400** - Invalid user | Invalid card | Missing user id on header | Invalid consumer | card detail not found for: %s | Invalid value for field %s | network not supported | unsupported card type | expiry date is in invalid format. Must be in YYYY-MM | cannot proceed verification due to missing or invalid configuration details
 
-Internal Server Error - http 500
-Bad Request
-internal_server_error | Error occured while creating TAV | internal_server_error | Symmetric key generation failed |
+Unauthorized - **http 401** -  mastercard_authorization_failed | Authorization failed
+
+Internal Server Error - **http 500** - Bad Request - internal_server_error | Error occured while creating TAV | internal_server_error | Symmetric key generation failed |
 
 
-- **MdesProvisioningError.provisioningError /  ObjcMdesProvisioningErrorProvisioningError:** unsupported - Apple pay is not available in the device region, go to Settings → General → Language & Region and change the region to Apple Wallet supported region (e.g Singapore).
+- **7.3.3MdesProvisioningError.provisioningError /  ObjcMdesProvisioningErrorProvisioningError:** 
+
+unsupported - Apple pay is not available in the device region, go to Settings → General → Language & Region and change the region to Apple Wallet supported region (e.g Singapore).
 
 systemCancelled - Apple Wallet has canceled card provisioning.
+
+
 
 ### 8. Additional Scenarios
 
