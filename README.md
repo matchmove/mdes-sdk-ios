@@ -396,11 +396,11 @@ Show or Hide the **Add to Wallet** button by checking if the card has been provi
 #### 7.3 Error codes and messages from MdesProvisioningError / ObjcMdesProvisioningError:**
 
 
-- **7.3.1MdesProvisioningError.appleWalletError / ObjcMdesProvisioningErrorAppleWalletError:** The following error messages are returned as part of error.
+**7.3.1 MdesProvisioningError.appleWalletError / ObjcMdesProvisioningErrorAppleWalletError:** The following error messages are returned as part of error.
 "Wallet View Controller was not initialized! ⚠️" .
 
 
-- **7.3.2MdesProvisioningError.serverCallFailed / ObjcMdesProvisioningErrorServerCallFailed:** 
+**7.3.2 MdesProvisioningError.serverCallFailed / ObjcMdesProvisioningErrorServerCallFailed:** 
 
 Bad Request - **http 400** - Invalid user | Invalid card | Missing user id on header | Invalid consumer | card detail not found for: %s | Invalid value for field %s | network not supported | unsupported card type | expiry date is in invalid format. Must be in YYYY-MM | cannot proceed verification due to missing or invalid configuration details
 
@@ -409,7 +409,7 @@ Unauthorized - **http 401** -  mastercard_authorization_failed | Authorization f
 Internal Server Error - **http 500** - Bad Request - internal_server_error | Error occured while creating TAV | internal_server_error | Symmetric key generation failed |
 
 
-- **7.3.3MdesProvisioningError.provisioningError /  ObjcMdesProvisioningErrorProvisioningError:** 
+**7.3.3 MdesProvisioningError.provisioningError /  ObjcMdesProvisioningErrorProvisioningError:** 
 
 unsupported - Apple pay is not available in the device region, go to Settings → General → Language & Region and change the region to Apple Wallet supported region (e.g Singapore).
 
