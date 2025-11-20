@@ -130,7 +130,7 @@ Open in Xcode the projects entitlement file and add the below entitlement key va
 ### 4. Integrating SDK
 
 #### Option A. Integrating via Swift Package Manager
-* **SPM URL:** `https://github.com/matchmove/mdes-sdk-ios`
+* **SPM URL:** https://github.com/matchmove/mdes-sdk-ios
 * **Tag:** `2.0.1`
 
 #### Option B. Manual Integration
@@ -226,7 +226,7 @@ if(error != nil) {
 According to Apple's Add to Wallet functionality guideline, the Add to Wallet button should only be shown when at least one device has not been provisioned. The `getCardStatus(card : MdesCard)` returns the current state of the card provisioning.
 
 <p align="center">
-  <img src="readme_images/add_to_apple_wallet_button.png" width="500" title="In App Provisioning Flow">
+  <img src="readme_images/add_to_apple_wallet_button.PNG" width="500" title="Add to Apple Wallet Button">
 </p>
 
 **Note:** The app should update the visibility of the Apple Wallet button when the device resumes from background to foreground. This should be done to reflect in the app any changes to the card state (e.g card activation, suspension, deactivation etc) occurring in the Apple Wallet App.
@@ -275,8 +275,8 @@ MdesCardState cardState = [self.mdesSdk getCardStatus: card];
 
 #### 6.3 Cards API Details
 
-
-* **Cards API URL:** `https://developer.matchmove.com/docs/optimus-prime/op-api/operations/get-a-user-wallet-card`
+ 
+* **Cards API URL:** https://developer.matchmove.com/docs/optimus-prime/op-api/operations/get-a-user-wallet-card
 
 
 - **cardId:** Unique id of the card from the matchmove cards api. (response field - "id")
@@ -313,7 +313,7 @@ MdesCardState cardState = [self.mdesSdk getCardStatus: card];
 The card state should be **unprovisioned** for the SDK to add the card to Apple Wallet. When a card state is not **unprovisioned** or **unavailable** the card has been added to Apple Wallet. Once the card has been successfully added to Apple Wallet to all paired devices, then the "Add to Apple Wallet" button should change.
 
 <p align="center">
-  <img src="readme_images/added_to_apple_wallet.png" width="500" title="In App Provisioning Flow">
+  <img src="readme_images/added_to_apple_wallet.PNG" width="500" title="Added to Apple Wallet">
 </p>
 
 
