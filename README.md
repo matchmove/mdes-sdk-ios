@@ -101,17 +101,31 @@ The Apple Pay iOS SDK provides easy-to-use API for provisioning cards to Apple W
 ### 3. Configuring App Entitlements
 Partners should use the Apple Developer website to select and configure the entitlement profile under Certificates, Identifiers & Profiles.
 
+<p align="center">
+  <img src="readme_images/capabilities.png" width="500" title="In App Provisioning Flow">
+</p>
+
+
+
 **Enabling Wallet Capability:**
 1. Open your app's project file in Xcode. Then select your app's target under the target list.
 2. Next select the **Signing & Capabilities** tab.
 3. Click on the **+ Capability** above the code signing section.
 4. In the capability pop up search for **Wallet**, Double click on the wallet to add the capability to the project.
 
+<p align="center">
+  <img src="readme_images/capabilities_xcode.png" width="500" title="In App Provisioning Flow">
+</p>
+
 **Entitlements File:**
 Open in Xcode the projects entitlement file and add the below entitlement key value pair:
 * **Key:** `com.apple.developer.payment-pass-provisioning`
 * **Type:** Boolean
 * **Value:** `YES`
+
+<p align="center">
+  <img src="readme_images/entitlements.png" width="500" title="In App Provisioning Flow">
+</p>
 
 ### 4. Integrating SDK
 
@@ -121,7 +135,7 @@ Open in Xcode the projects entitlement file and add the below entitlement key va
 
 #### Option B. Manual Integration
 1. Move the `MdesSdk.framework` artefact into your project.
-2. Add the `MdesSdk.framework` located within your project to the **Embedded Binaries** section in the General tab of your iOS app target.
+2. Add the `MdesSdk.framework` located within your project to the **Embedded Binaries** section in the **General** tab of your iOS app target.
 3. Open your app's project file in Xcode. Then select your app's target under the target list.
 4. Next, Select the **Build Phases** tab and under the **Embed Frameworks** step add a new **Run Script Phase**. Name it "Mdes Framework Archive". (This script will remove simulator architectures while archiving).
 5. In the text area add the following code:
@@ -211,6 +225,10 @@ if(error != nil) {
 
 According to Apple's Add to Wallet functionality guideline, the Add to Wallet button should only be shown when at least one device has not been provisioned. The `getCardStatus(card : MdesCard)` returns the current state of the card provisioning.
 
+<p align="center">
+  <img src="readme_images/add_to_apple_wallet_button.png" width="500" title="In App Provisioning Flow">
+</p>
+
 **Note:** The app should update the visibility of the Apple Wallet button when the device resumes from background to foreground. This should be done to reflect in the app any changes to the card state (e.g card activation, suspension, deactivation etc) occurring in the Apple Wallet App.
 
 #### 6.1 Add to Apple Wallet Button UI Example
@@ -229,7 +247,7 @@ Based on the Card state from `getCardStatus` method, the button will be hidden o
 
 #### 6.2 Getting Card State
 
-The params required to initialise the MdesCard Object can be fetched from Cards API.
+The params required to initialise the `MdesCard` Object can be fetched from Cards API.
 
 **Swift:**
 
@@ -256,6 +274,10 @@ MdesCardState cardState = [self.mdesSdk getCardStatus: card];
 ```
 
 #### 6.3 Cards API Details
+
+
+* **Cards API URL:** `https://developer.matchmove.com/docs/optimus-prime/op-api/operations/get-a-user-wallet-card`
+
 
 - **cardId:** Unique id of the card from the matchmove cards api. (response field - "id")
 - **cardLastFourDigit:** Last four digits of the card number to Add to Apple Wallet. (response field - retrieved from "number")
@@ -288,7 +310,12 @@ MdesCardState cardState = [self.mdesSdk getCardStatus: card];
 
 ### 7. Adding a Card to Apple Wallet
 
-The card state should be unprovisioned for the SDK to add the card to Apple Wallet. When a card state is not unprovisioned or unavailable the card has been added to Apple Wallet. Once the card has been successfully added to Apple Wallet to all paired devices, then the "Add to Apple Wallet" button should change.
+The card state should be **unprovisioned** for the SDK to add the card to Apple Wallet. When a card state is not **unprovisioned** or **unavailable** the card has been added to Apple Wallet. Once the card has been successfully added to Apple Wallet to all paired devices, then the "Add to Apple Wallet" button should change.
+
+<p align="center">
+  <img src="readme_images/added_to_apple_wallet.png" width="500" title="In App Provisioning Flow">
+</p>
+
 
 #### 7.1 Swift
 
@@ -325,11 +352,11 @@ func handler(result: Result<String, MdesProvisioningError>) {
 ```
 
 **NOTES:**
-- **success:** Card has been added to Apple Wallet. Hide the Add to Wallet button when card has been provisioned on all the devices.
-- **MdesProvisioningError.appleWalletError:** Unable to initiate provisioning with the given card details.
-- **MdesProvisioningError.serverCallFailed:** Card tokenization api call to the MatchMove server failed.
-- **MdesProvisioningError.provisioningError:** Unable to provision card. Error message from Apple.
-- **MdesProvisioningError.userCancelled:** User cancelled card provisioning.
+- **success:** Card has been added to Apple Wallet. Hide the **Add to Wallet button** when card has been provisioned on all the devices.
+- **MdesProvisioningError.appleWalletError:** Unable to initiate provisioning with the given card details. The associated object contains error message.
+- **MdesProvisioningError.serverCallFailed:** Card tokenization api call to the MatchMove server failed. The associated object contains details on the api failure.
+- **MdesProvisioningError.provisioningError:** Unable to provision card. The associated object contains error message from apple on provisioning failure.
+- **MdesProvisioningError.userCancelled:** User cancelled card provisioning.Show or Hide the Add to Wallet button by checking if the card has been provisioned on all the devices.
 
 #### 7.2 Objective-C
 
@@ -357,27 +384,71 @@ if (controller != nil) {
 }
 ```
 
+**NOTES:**
+- **success:** Card has been added to Apple Wallet. The success block param contains the success message. Hide the **Add to Wallet** button when card has been provisioned on all the devices.
+- **MdesProvisioningError.appleWalletError:** Unable to initiate provisioning with the given card details. The returned NSError userinfo contains the error message.
+- **MdesProvisioningError.serverCallFailed:** Card tokenization api call to the MatchMove server failed. The returned NSError userinfo contains the details on the api failure.
+- **MdesProvisioningError.provisioningError:** Unable to provision card. The returned NSError userinfo contains the error message from apple on provisioning failure.
+- **MdesProvisioningError.userCancelled:** User cancelled card provisioning.
+Show or Hide the **Add to Wallet** button by checking if the card has been provisioned on all the devices.
+
+
+**Error codes and messages from MdesProvisioningError / ObjcMdesProvisioningError:**
+- **MdesProvisioningError.appleWalletError / ObjcMdesProvisioningErrorAppleWalletError:** The following error messages are returned as part of error.
+"Wallet View Controller was not initialized! ⚠️" .
+
+
+
+- **MdesProvisioningError.serverCallFailed / ObjcMdesProvisioningErrorServerCallFailed:** Bad Request - http 400
+
+| Code | Description |
+| validation_error | Invalid user |
+| validation_error | Invalid card |
+| validation_error | Missing user id on header |
+| validation_error | Invalid consumer |
+| validation_error | card detail not found for: %s |
+| validation_error | Invalid value for field %s |
+| validation_error | network not supported |
+| validation_error | unsupported card type |
+| validation_error | expiry date is in invalid format. Must be in YYYY-MM |
+| validation_error | cannot proceed verification due to missing or invalid configuration details |
+
+Unauthorized - http 401
+| Code | Description |
+| mastercard_authorization_failed | Authorization failed. |
+
+Internal Server Error - http 500
+Bad Request
+| Code | Description |
+| internal_server_error | Error occured while creating TAV |
+| internal_server_error | Symmetric key generation failed |
+- **MdesProvisioningError.provisioningError /  ObjcMdesProvisioningErrorProvisioningError:** unsupported - Apple pay is not available in the device region, go to Settings → General → Language & Region and change the region to Apple Wallet supported region (e.g Singapore).
+
+systemCancelled - Apple Wallet has canceled card provisioning.
+
 ### 8. Additional Scenarios
 
-#### 8.1 Checking Card State for Paired Devices
+#### 8.1 Handling the “Card not verified” scenario
 
-```swift
-let cardStateForPairedDevice: MdesCardState? = mdesSdk.getCardStatus(card: mdesCard, 
-                                                                     forPairedDevice: true)
-```
+If the user does not complete the card verification step during provisioning (e.g., exits midway or fails the OTP step), correct status of the card should be displayed to the user. 
 
-#### 8.2 Error Handling
+Display an appropriate message indicating the card is not yet activated. Example: “Card not activated. Go to Apple Wallet to complete verification”
 
-The SDK provides comprehensive error handling for various scenarios:
+In such cases, the verification process cannot be re-initiated from within the app. The user must go to the Apple Wallet app on their device to complete the verification and finish provisioning the card. 
 
-| Error Type | Description | Action Required |
-|------------|-------------|-----------------|
-| `sdkNotSetUp` | SDK not configured | Call `MdesSdk.configure(_:)` |
-| `appleWalletUnavailable` | Apple Wallet not available in region | Change device region |
-| `appleWalletError` | Provisioning initiation failed | Check card details |
-| `serverCallFailed` | API call to MatchMove failed | Check network/credentials |
-| `provisioningError` | Apple provisioning failed | Check Apple error message |
-| `userCancelled` | User cancelled the flow | Handle gracefully |
+
+#### 8.2 Jailbroken Devices
+
+For Jailbroken devices the app should display an error and prevent the users from using the app's services. This is required for deploying the app in Apple Appstore.
+
+Refer to SDK package - UIDeviceExtension.swift file to handle the error on the App. 
+
+**Note:**: All assets required for the integration like Apple Pay Mark will be included in the SDK. Please reach out to your Implementation specialist for any assistance. 
+
+
+**References**:
+
+**PKAddPassButton** -  https://developer.apple.com/documentation/passkit/pkaddpassbutton
 
 ---
 
