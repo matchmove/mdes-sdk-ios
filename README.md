@@ -26,6 +26,9 @@
     - Wallet Non UI Extension
     - Wallet UI Extension
 5. [Functional Testing](#functional-testing)
+    - Prerequisites for Apple Pay Testing 
+    - Adding a Test Card to Apple Wallet 
+    - Testing Apple Pay Transactions 
 6. [Common Implementation Issues](#common-implementation-issues)
 
 ---
@@ -79,7 +82,10 @@ The Apple Pay iOS SDK provides easy-to-use API for provisioning cards to Apple W
 ### 2. Getting started
 
 #### 2.1 UI Workflow
-(Refer to UI/UX Guidelines provided by MatchMove/Apple).
+
+<p align="center">
+  <img src="readme_images/iap_flow.png" width="500" title="In App Provisioning Flow">
+</p>
 
 #### 2.2 Tech Workflow
 1. Integrate the Apple Pay iOS SDK.
