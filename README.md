@@ -536,40 +536,45 @@ class UIExtensionViewController: PKIssuerProvisioningExtensionAuthorizationViewC
    - Ensure proper entitlements are included
    - Test with internal/external testers
 
-### Test Scenarios
 
-#### In-App Provisioning Tests
+Once the SDK integration is successfully completed, in-app provisioning and wallet extension functionality can be tested by adding a card, virtual or physical, issued under the specific program and performing a few test transactions.
 
-1. **Card State Verification**
-   - Test unprovisioned card shows "Add to Wallet" button
-   - Test provisioned card shows appropriate status
-   - Test paired device scenarios
+---
 
-2. **Provisioning Flow**
-   - Test successful card addition
-   - Test user cancellation
-   - Test error scenarios (network, authentication)
+### Prerequisites for Apple Pay Testing
 
-3. **Multi-Device Testing**
-   - Test iPhone provisioning
-   - Test Apple Watch provisioning
-   - Test state synchronization
+* **Whitelisting Test Cards:** Before testing Apple Pay functionality, the specific test cards must be **whitelisted with Mastercard's MDES service**. Please reach out to your MatchMove implementation specialist to initiate this process.
+* **Apple Pay Wallet Configuration:** To enable Apple Pay Wallet for your program, partners should **raise a ticket with MatchMove** requesting the necessary configuration and setup.
 
-#### Wallet Extension Tests
+---
 
-1. **Extension Visibility**
-   - Verify extension appears in Wallet app
-   - Test authentication flow
-   - Test card selection interface
+### Adding a Test Card to Apple Wallet
 
-2. **Provisioning from Wallet**
-   - Test direct provisioning from Wallet app
-   - Verify card appears correctly
-   - Test activation flow
+Any active MatchMove-issued card, physical or virtual, under the specific program can be used to test the implementation. After integrating the features into your customer-facing app, please publish the changes via a **TestFlight build** on your App Store account for testing.
 
-### Payment Testing
+### Provisioning Steps
 
-Test transactions can be executed on the specific card added to Apple Wallet either for an offline or online purchase where Apple Pay is accepted. Ensure you have sufficient balance.
+1.  **Via In-App Provisioning:**
+    * Select the card you want to provision.
+    * Click on the **“Add to Apple Wallet”** button and follow the on-screen instructions to complete the process.
+
+2.  **Via Wallet Extension (In-Wallet Flow):**
+    * Ensure the user is **logged in to the banking app** (main app).
+    * Open the iPhone **Wallet app** and add the card using the app extension flow.
+
+> **Note:** To successfully add a card, the users must **verify using an OTP** sent to their registered mobile number. All eligible cards can be provisioned either on the user’s iPhone or a paired Apple Watch.
+
+---
+
+## Testing Apple Pay Transactions
+
+Test transactions can be executed on the specific card added to Apple Wallet either for an offline or online purchase where Apple Pay is accepted as a form of payment.
+
+* **Devices:** Transactions can be made using both **iPhone** or **Apple Watch**. Ensure that the card is provisioned first using the respective device.
+* **Instructions:** For instructions on how to use a card added to Apple Pay to pay for transactions, refer to the [Make purchases using Apple Pay – Apple Support (AU)](https://support.apple.com/en-au/HT201469).
+* **Apple Watch Reference:** Refer to this video on how to use Apple Pay using Apple Watch - [How to use Apple Pay on your Apple Watch | Apple Support](https://www.youtube.com/watch?v=NPUq99F6frg) 
+
+* **Balance:** Ensure you have **sufficient balance** in your card before executing these test transactions.
 
 ---
 
@@ -643,7 +648,7 @@ Enables/Disables Apple Wallet/Pay UI: In countries where Apple Wallet/Pay isn't 
 **Card Issuer Region:** The country where the financial institution that issued your payment card (credit, debit, prepaid) is based.
 Primary Determinant for Apple Pay Eligibility: For a card to be added to Apple Pay, the issuing bank/institution must support Apple Pay in that specific country. A US bank card will generally only work with Apple Pay if the bank supports Apple Pay for its US customers. &lt;br> - Currency: The card will transact in its native currency.
 
-### 7. Diagnosing Issues with App Entitlements
+### 8. Diagnosing Issues with App Entitlements
 
 Follow the steps listed in Check Your Provisioning Profile in the Diagnosing Issues with Entitlements document linked below:
 
