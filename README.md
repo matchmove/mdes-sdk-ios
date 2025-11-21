@@ -495,27 +495,148 @@ class NonUIExtensionRequestHandler: PKIssuerProvisioningExtensionHandler {
 
 ### Wallet UI Extension
 
-The UI extension provides custom authentication interface:
+To present a custom authorization UI within a Wallet UI extension before the provisioning flow begins, you'll need to implement a view within your extension. This allows for various authorization methods, and in this example, we're leveraging biometric authentication.
+
+Here's a breakdown of the process and key considerations:
+
+* **Authentication Code Sharing:** Note that the authentication code(e.g. login screen flow) can be shared between your main application and the Wallet UI extension.
+* **Diverse Authentication Methods:** Your custom UI provides the flexibility to implement different authentication types beyond biometrics, such as PIN entry etc.
+* **Loading the Custom SwiftUI View:** Within the `viewDidLoad` method of your extension's main view controller, you'll instantiate and present your custom authentication view. If you're using SwiftUI, this involves loading the `WUIExtView`.
+* **Biometric Authentication via UIDevice Extension:** The example utilizes a `UIDevice` extension to handle the biometric authentication process within the `WUIExtView`.
+* **WUIExtHandler and Completion:** The `WUIExtHandler` is crucial. It expects a completion handler that takes a `PKIssuerProvisioningExtensionAuthorizationResult`. This result communicates whether the user has been successfully authorized (`.authorized`) or not.
+* **Modular SwiftUI View (`WUIExtView`):** For clean separation of concerns, it's recommended to create a separate SwiftUI file named `WUIExtView` to house your custom login/authentication interface.
+* **UI Customization:** The authentication UI is fully customizable to match your app's branding and specific requirements. While SwiftUI is used in this example, you can also implement the UI using UIKit if preferred.
+* **Signaling Successful Authentication:** Upon successful authentication through your custom UI (in this case, biometric authentication), you must call the `completionHandler` provided by the `WUIExtHandler` with the `.authorized` state. This signals to the system that the provisioning flow can proceed.
+
+In essence, your Wallet UI extension intercepts the provisioning flow, presents a custom authentication screen (built with SwiftUI in this example and incorporating biometric authentication via a UIDevice extension), and then informs the system about the authentication status through the `WUIExtHandler`'s completion handler. Remember to handle both successful and unsuccessful authentication scenarios appropriately within your extension.
+
+
 
 ```swift
-import PassKit
-import UIKit
 
-class UIExtensionViewController: PKIssuerProvisioningExtensionAuthorizationViewController {
+import UIKit
+import SwiftUI
+import PassKit
+import Foundation
+import LocalAuthentication
+/**
+ The UI extension's principal class.
+ */
+class WUIExtHandler: UIViewController, PKIssuerProvisioningExtensionAuthorizationProviding {
+
+    var completionHandler: ((PKIssuerProvisioningExtensionAuthorizationResult) -> Void)?
     
+    /**
+     Call this method after the view controller loads its view hierarchy into memory.
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAuthenticationUI()
+       
+        // Create an instance of the SwiftUI view.
+        // Pass the completion handler to the SwiftUI view.
+        
+        
+        let swiftUIView = WUIExtView(completionHandler: completionHandler)
+        
+        // Create a `UIHostingController` with the extension's SwiftUI view as
+        // its root view.
+        let controller = UIHostingController(rootView: swiftUIView)
+        
+        // Add the `UIHostingController` view to the destination
+        // view controller.
+        addChild(controller)
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(controller.view)
+        
+        // Set and activate the constraints for the extension's SwiftUI view.
+        NSLayoutConstraint.activate([
+            controller.view.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1),
+            controller.view.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 1),
+            controller.view.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            controller.view.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        
+        // Notify the child view controller that the move is complete.
+        controller.didMove(toParent: self)
+         
+    }
+}
+
+```
+
+
+```swift
+import SwiftUI
+import PassKit
+
+struct WUIExtView: View {
+    
+    // Add the completion handler as an instance variable.
+    var completionHandler: ((PKIssuerProvisioningExtensionAuthorizationResult) -> Void)?
+    
+    @State var username: String = ""
+    @State var password: String = ""
+    @State private var showAlert = false // State variable to control alert presentation
+    
+    private func getLabelText() -> String {
+        let biometricType =  "Biometric Info"//UIDevice.current.deviceHasTouchId ? "Touch ID" : "Face ID"
+        return "Please Authenticate with your \(biometricType) to give access to card details"
     }
     
-    private func setupAuthenticationUI() {
-        // Implement custom authentication UI
-        // Handle user login/OTP verification
+    
+    private func getButtonText() -> String {
+        return "Authenticate"
     }
     
-    private func completeAuthentication() {
-        // Call completion handler after successful auth
-        self.completionHandler(.authorized)
+    /**
+     Handle a tap on the Face ID button.
+     */
+    func loginButtonTapped() {
+        // Create biometric login logic.
+        UIDevice.current.isBiometricValid { success in
+            // Call the completion handler.
+            if success {
+                completionHandler!(.authorized)
+            } else {
+                DispatchQueue.main.async {
+                    showAlert = true
+                   // completionHandler!(.canceled)
+                }
+            }
+        }
+    }
+    
+    var body: some View {
+        ZStack {
+            Color.white
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack(spacing: 50) {
+                Image("vivid")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 264, height: 134)
+                
+                Text(getLabelText())
+                    .font(.system(size: 16))
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.black)
+                    .frame(width: 333, height: 69)
+                
+                Button(action: loginButtonTapped) {
+                    Text(getButtonText())
+                        .font(.system(size: 16, weight: .medium))
+                        .foregroundColor(Color.white)
+                        .frame(width: 241, height: 53)
+                        .background(Color(red: 0.89, green: 0.50, blue: 0.27))
+                        .cornerRadius(10)
+                }
+            }
+        }
+        .alert(isPresented: $showAlert) { // Add the alert modifier
+            Alert(title: Text("Authentication Failed"), message: Text("Please check the Biometric Authentication Settings"), dismissButton: .default(Text("OK")))
+        }
+
     }
 }
 ```
