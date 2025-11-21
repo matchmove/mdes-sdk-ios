@@ -102,7 +102,7 @@ The Apple Pay iOS SDK provides easy-to-use API for provisioning cards to Apple W
 Partners should use the Apple Developer website to select and configure the entitlement profile under Certificates, Identifiers & Profiles.
 
 <p align="center">
-  <img src="readme_images/capabilities.png" width="500" title="In App Provisioning Flow">
+  <img src="readme_images/capabilities.png" width="500" title="Configuring App Entitlements">
 </p>
 
 
@@ -114,7 +114,7 @@ Partners should use the Apple Developer website to select and configure the enti
 4. In the capability pop up search for **Wallet**, Double click on the wallet to add the capability to the project.
 
 <p align="center">
-  <img src="readme_images/capabilities_xcode.png" width="500" title="In App Provisioning Flow">
+  <img src="readme_images/capabilities_xcode.png" width="500" title="Enabling Wallet Capability">
 </p>
 
 **Entitlements File:**
@@ -124,7 +124,7 @@ Open in Xcode the projects entitlement file and add the below entitlement key va
 * **Value:** `YES`
 
 <p align="center">
-  <img src="readme_images/entitlements.png" width="500" title="In App Provisioning Flow">
+  <img src="readme_images/entitlements.png" width="500" title="Entitlements File">
 </p>
 
 ### 4. Integrating SDK
@@ -445,25 +445,124 @@ Refer to SDK package - UIDeviceExtension.swift file to handle the error on the A
 
 ## Wallet Extensions
 
-Wallet Extensions allow users to add cards directly from the Wallet app without opening the partner app.
+**Note**: The implementation of In-App Provisioning is a prerequisite to the configuration of Wallet Extensions. 
 
-### Steps to Setup
+The Wallet Extensions experience starts in Apple Wallet. Note: A user has to open and log in to the issuer app at least once for Apple Wallet to detect the extensions. First, a user taps the add button (+) in the top right corner of Apple Wallet. The next screen Wallet displays to the user includes a **From Apps on Your iPhone** section. Issuer apps that have implemented Wallet Extensions will appear in a list under the **From Apps on Your iPhone** section if the issuer app has at least one available payment pass that is not currently in Wallet. A user can, then, tap on a listed issuer to begin the provisioning experience using the issuer’s Wallet Extension. The extension will return user to Wallet automatically once the provisioning is complete.
+
+
+<p align="center">
+  <img src="readme_images/extension_flow.png" width="500" title="Wallet Extension Flow">
+</p>
+
+### Steps to Setup Wallet Extensions
 
 1. **Create Wallet Extension Targets**
-   - Add Wallet Non-UI Extension target
-   - Add Wallet UI Extension target (optional)
+   - A Wallet extension is a separate target within your iOS app project.  This allows Wallet to interact with your app's data and functionality without launching the main app.
 
-2. **Configure App Groups**
-   - Create App Group in Apple Developer Portal
-   - Add to main app and extensions
+You'll need to create a new target specifically for your Wallet extension.  This target will contain the code that handles adding passes to the Wallet app.
 
-3. **Update Entitlements**
-   - Add PassKit entitlements
-   - Configure App Groups
+There will be 2 extensions one NonUI and one UI.
 
-4. **Implement Extension Logic**
-   - Handle pass provisioning requests
-   - Manage authentication flow
+Format of Ids - e.g. if the bundle identifier of the app is - **com.companyname.appname**
+
+Wallet Non UI extension bundle identifier - **com.companyname.appname.WNonUIExt**
+
+Wallet UI extension bundle identifier - **com.companyname.appname.WUIExt**
+
+<p align="center">
+  <img src="readme_images/adding_extensions.png" width="500" title="Adding Extensions">
+</p>
+
+<p align="center">
+  <img src="readme_images/adding_nonui_extension.png" width="500" title="Adding NonUI Extensions">
+</p>
+
+<p align="center">
+  <img src="readme_images/adding_ui_extension.png" width="500" title="Adding UI Extensions">
+</p>
+
+<p align="center">
+  <img src="readme_images/extension_added.png" width="500" title="Extension Targets">
+</p>
+
+2. **App Groups Entitlements**
+   - App Groups enable your main app and its extensions (like the Wallet extension) to share data.This is crucial for Wallet extensions, as they need to access information from your app (e.g., pass details, user authentication).
+
+To enable data sharing between your app and Wallet extension, create an App Group identifier (e.g., group.com.example.app) in your developer account and configure both targets to use it.
+
+<p align="center">
+  <img src="readme_images/app_groups.png" width="500" title="Add Group Entitlements">
+</p>
+
+3. **Create a new App Group**
+   - When creating an App Group to support the Wallet Extensions feature, ensure that the new App Group is added to both “non-UI extension” and “UI extension” targets in Xcode.
+
+Common App Group membership allows the main, containing app to share data with the extensions. If either extension target (or both) are not members of the same App Group, the extensions cannot share data with each other or the main app using the App Group’s shared container.
+
+ 
+
+To create a new App Group with Xcode for the iOS issuer app and both the extensions, follow the steps below:
+
+Click the add button (+) below the App Groups list.
+
+<p align="center">
+  <img src="readme_images/app_groups_2.png" width="500" title="Create a new App Group">
+</p>
+
+
+Enter a container ID in the dialog that appears. A container ID must begin with group. and then a custom string in reverse DNS notation.
+
+
+<p align="center">
+  <img src="readme_images/group_creation.png" width="500" title="Add a new container">
+</p>
+
+
+
+4. **PNO Pass Metadata Configuration**
+   PNO refers to "PassKit Payment Provisioning."  This configuration involves setting up the necessary metadata for your passes, specifically payment passes, to work with Apple Pay.This metadata includes information about the card issuer, supported payment networks, and other details required for Apple Pay to function correctly.
+
+For Wallet Extensions, the associatedApplicationIdentifiers key needs to be updated on the PNO system to include the App IDs of the extension targets.
+
+
+5. **Entitlement Configurations**
+   Entitlements are key-value pairs that grant your app and its extensions specific capabilities or permissions.For Wallet extensions, you'll need to configure entitlements related to:
+
+App Groups: Enabling your app and extension to use the App Group you created.
+
+PassKit: Enabling your app and extension to interact with the PassKit framework, which is essential for working with passes in Wallet.
+
+This has to be done for both the extensions.
+
+<p align="center">
+  <img src="readme_images/group_in_entitlements.png" width="500" title="Entitlement Configurations">
+</p>
+
+
+5. **NSExtensions Properties**
+
+
+   The NSExtension Properties section in your Wallet extension's Info.plist file is crucial for defining the extension's behavior and integration with the system.  It includes keys that specify the extension's type (in this case, a Wallet payment pass extension) and its capabilities.  
+
+For example, it configures the extension's principal class, which is the entry point for the extension's code, and declares any required entitlements, such as access to an App Group for data sharing with the main app.These properties ensure that the Wallet extension is correctly recognized and functions as intended within the Wallet ecosystem.
+
+Non-UI Extension Properties
+
+<p align="center">
+  <img src="readme_images/nonui_extension_info.png" width="500" title="Non-UI Extension Properties">
+</p>
+
+UI Extension Properties
+
+<p align="center">
+  <img src="readme_images/ui_extension_info.png" width="500" title="UI Extension Properties">
+</p>
+
+References:
+
+Wallet Extension Apple Documentation - 
+[Apple Pay on the Web Demo ](https://applepaydemo.apple.com/wallet-extensions) 
+
 
 ### Wallet Non UI Extension
 
