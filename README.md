@@ -590,41 +590,64 @@ os_log("availablePassesForIphone: %{public}@", log: nonuiextensionlog, type: .er
 
 **Issue:** Extension crashes or Pass counts have filter issues.
 
-**Solution:** Ensure `os_log` formatting is correct. Check Apple watch pairing code logic.
+**Solution:** Ensure `os_log` formatting is correct. Check Apple watch pairing code logic. Check if Pass counts has some filter issue.
 
 ### 2. Incorrect App Group Configuration
 
-**Issue:** Main app and Wallet extension are unable to share data.
+**Issue:** The main app and Wallet extension are unable to share data, leading to errors when the extension tries to access pass information.
 
-**Solution:** Ensure App Group is created in Apple Developer Portal and added to both main app and extensions.
+**Solution:** Ensure App Group is created in Apple Developer Portal and added to both main app and extensions.Verify that both the main app and the Wallet extension targets have the App Group entitlement enabled and configured with the same, correct identifier.
 
 ### 3. Missing or Incorrect Entitlements
 
-**Issue:** Wallet extension lacks permissions. Error: "Wallet Controller Not initialised."
+**Issue:** The Wallet extension lacks the necessary permissions to interact with the PassKit framework or access shared data. Error: "Wallet Controller Not initialised."
 
-**Solution:** Check `.entitlements` file for App Groups and PassKit.
+**Solution:** In Xcode, check the entitlements file for both the main app and the Wallet extension.Ensure that the App Groups entitlement is correctly configured.Ensure that the PassKit entitlement is present, allowing interaction with Wallet.
 
 ### 4. Incorrect PNO Pass Metadata
 
 **Issue:** Payment passes not provisioned correctly.
 
-**Solution:** Update `associatedApplicationIdentifiers` to include extension App IDs.
+**Solution:** Update `associatedApplicationIdentifiers` to include extension App IDs.Double-check the pass metadata configuration, including card issuer details, supported payment networks, and other Apple Pay-specific requirements.
+
+Ensure that this metadata is correctly formatted and provided during the pass provisioning process.
 
 ### 5. Code Signing and Provisioning Profile Problems
 
-**Issue:** Build fails due to code signing.
+**Issue:** The Wallet extension or the main app fails to build or export due to code signing errors.
 
-**Solution:** Verify bundle identifiers match and provisioning profiles include necessary entitlements.
+**Solution:** Verify that your code signing certificates and provisioning profiles are valid and correctly configured for both the main app and the Wallet extension.
+Ensure that the bundle identifiers match and that the provisioning profiles include the necessary entitlements (App Groups, PassKit).
 
-### 6. Region Specific Details
+### 6. Handling User Authentication:
 
-**Device Region:** In countries where Apple Wallet/Pay isn't officially launched, the interface might be hidden. Change region to Singapore.
 
-**Card Issuer Region:** Primary determinant for Apple Pay Eligibility.
+**Issue**: Implementing a secure and user-friendly authentication flow within the Wallet UI extension.
+
+**Solution**:
+
+Use a custom UI (e.g., built with SwiftUI or UIKit) within the Wallet UI extension to present an authentication screen.
+
+Implement appropriate authentication methods (e.g., biometric authentication using Face ID or Touch ID, PIN entry, security questions).
+
+Upon successful authentication, signal this to the system using the PKIssuerProvisioningExtensionAuthorizationResult with the .authorized state.
+
+
+### 7. Region Specific Details
+
+**Device Region:** 
+
+The region setting on your iPhone or Apple Watch (Settings → General → Language & Region → Region).
+Enables/Disables Apple Wallet/Pay UI: In countries where Apple Wallet/Pay isn't officially launched, the interface or option to add cards might be hidden unless the region is changed to a supported one. &lt;br> - Influences Pass Availability: Certain types of passes (e.g., specific transit cards, driver's licenses) might only appear or be addable if the device region matches where these passes are issued or supported. &lt;br> - May affect local services integration within Wallet.
+
+**Card Issuer Region:** The country where the financial institution that issued your payment card (credit, debit, prepaid) is based.
+Primary Determinant for Apple Pay Eligibility: For a card to be added to Apple Pay, the issuing bank/institution must support Apple Pay in that specific country. A US bank card will generally only work with Apple Pay if the bank supports Apple Pay for its US customers. &lt;br> - Currency: The card will transact in its native currency.
 
 ### 7. Diagnosing Issues with App Entitlements
 
-Refer to Apple's "Diagnosing Issues with Entitlements" documentation. If In-App Provisioning is present in Additional capabilities under your Apple Identifier, it should be enabled.
+Follow the steps listed in Check Your Provisioning Profile in the Diagnosing Issues with Entitlements document linked below:
+
+ https://developer.apple.com/documentation/bundleresources/diagnosing-issues-with-entitlements#3655440 or visit https://developer.apple.com/  and go to Certificates and Provisioning → App identifiers → Select your Apple Identifier → Additional capabilities, if In-App Provisioning is present, the entitlements are now available to your app (The entitlement should be enabled if it’s in disabled state)
 
 ---
 
