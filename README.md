@@ -467,31 +467,201 @@ Wallet Extensions allow users to add cards directly from the Wallet app without 
 
 ### Wallet Non UI Extension
 
-The Non-UI extension handles the core provisioning logic:
+
+Wallet non-UI extension (`WNonUIExtHandler`) is designed to integrate the app with Apple's Wallet, specifically for adding passes (like payment cards). 
+
+It does not provide a user interface. It contains the logic for determining pass availability, authentication requirements, and generating pass provisioning requests.
+
+The extension includes the following methods:
+
+* **`status`**: This method is called to determine the current state of pass addition. It checks two key aspects:
+    * If any passes are available to be added.
+    * Whether the user will be required to authenticate before adding a pass.
+* **`passEntries`**: This method returns the number of passes available to be added to the user's iPhone.
+* **`remotePassEntries`**: This method returns the number of passes available to be added to the user's Apple Watch.
+* **`generateAddPaymentPassRequestForPassEntryWithIdentifier`**: This method is used to generate a request for provisioning a payment card. This request is essential for adding a card to the user's Wallet.
+
+#### WNonUIExtHandler.swift
+
+This is the class structure with all the methods required-
 
 ```swift
-import PassKit
 
-class NonUIExtensionRequestHandler: PKIssuerProvisioningExtensionHandler {
-    
-    override func status(completion: @escaping (PKIssuerProvisioningExtensionStatus) -> Void) {
-        // Check if user is authenticated and eligible
-        completion(.requiresAuthentication)
-    }
-    
-    override func passEntries(completion: @escaping ([PKIssuerProvisioningExtensionPassEntry]?, Error?) -> Void) {
-        // Return available cards for provisioning
-        let passEntries = getAvailableCards()
-        completion(passEntries, nil)
-    }
-    
-    override func remotePassEntries(completion: @escaping ([PKIssuerProvisioningExtensionPassEntry]?, Error?) -> Void) {
-        // Return cards for paired devices
-        let remoteEntries = getRemoteCards()
-        completion(remoteEntries, nil)
-    }
-}
+import PassKit
+import Mdes
+
+/**
+ The non-UI extension's principal class.
+ */
+class WNonUIExtHandler: PKIssuerProvisioningExtensionHandler {
+    let passLibrary = PKPassLibrary()
+    private var mdesSdk: MdesSdk?
+
+func setupMdesSDK() {}
+override func status(completion: @escaping (PKIssuerProvisioningExtensionStatus) -> Void) {}
+override func passEntries(completion: @escaping ([PKIssuerProvisioningExtensionPassEntry]) -> Void) {}
+override func remotePassEntries(completion: @escaping ([PKIssuerProvisioningExtensionPassEntry]) -> Void){}
+override func generateAddPaymentPassRequestForPassEntryWithIdentifier(_ identifier: String, configuration: PKAddPaymentPassRequestConfiguration,
+                                                                          certificateChain certificates: [Data], nonce: Data, nonceSignature: Data,
+                                                                          completionHandler completion: @escaping (PKAddPaymentPassRequest?) ->
+                                                                          Void) {}
+
 ```
+
+**Methods**
+
+Below is the implementation for all the methods-
+
+
+
+```swift
+override func status(completion: @escaping (PKIssuerProvisioningExtensionStatus) -> Void) {
+        let status = PKIssuerProvisioningExtensionStatus()
+        guard appGroupSharedDefaults.bool(forKey: "isApplePayEnabled") else {
+            completion(status)
+            return
+        }
+        let cardsListArray: [MdesCard] = [] // Replace with actual card list from shared defaults
+        setupMdesSDK()
+        guard let mdesSdk = mdesSdk else {
+            completion(status)
+            return
+        }
+        status.passEntriesAvailable = mdesSdk.availablePassesForIphone(cardListArray: cardsListArray) > 0
+        status.remotePassEntriesAvailable = mdesSdk.availableRemotePassesForAppleWatch(cardListArray: cardsListArray) > 0
+        status.requiresAuthentication = appGroupSharedDefaults.bool(forKey: "ShouldRequireAuthenticationForAppleWallet")
+        
+        completion(status)
+    }
+
+```
+
+```swift
+/**
+     Return a list of pass entries that represent payment passes that are available to add to an iPhone.
+     */
+    
+    override func passEntries(completion: @escaping ([PKIssuerProvisioningExtensionPassEntry]) -> Void) {
+        
+        let cardsListArray : [MdesCard]  = [MdesCard]()//MdesCard Array passed from AppUserDefaults
+        self.setupMdesSDK()
+        guard let mdesSdk = mdesSdk else {
+            completion([])
+            return
+        }
+        mdesSdk.passEntries(cardListArray: cardsListArray) { passEntries in
+            completion(passEntries)
+        }
+        
+    }
+
+```
+
+```swift
+
+override func remotePassEntries(completion: @escaping ([PKIssuerProvisioningExtensionPassEntry]) -> Void) {
+        
+        let cardsListArray : [MdesCard] = [MdesCard]() //MdesCard Array passed from AppUserDefaults
+        guard let mdesSdk = mdesSdk else {
+            completion([])
+            return
+        }
+        
+        mdesSdk.remotePassEntries(cardListArray: cardsListArray) { remotePassEntries in
+            completion(remotePassEntries)
+        }
+        
+    }
+
+```
+
+
+```swift
+  /**
+     Generate a request to add a payment pass to Apple Pay based on the user's selection of the
+     payment pass.
+     */
+    override func generateAddPaymentPassRequestForPassEntryWithIdentifier(_ identifier: String, configuration: PKAddPaymentPassRequestConfiguration,
+                                                                          certificateChain certificates: [Data], nonce: Data, nonceSignature: Data,
+                                                                          completionHandler completion: @escaping (PKAddPaymentPassRequest?) ->
+                                                                          Void) {
+        self.setupMdesSDK()
+        guard let mdesSdk = mdesSdk else {
+            completion(nil)
+            return
+        }
+        let userId = appGroupSharedDefaults.string(forKey: "UserId")
+        mdesSdk.generateAddPaymentPassRequestForPassEntryWithIdentifier(identifier, configuration: configuration, certificateChain: certificates, nonce: nonce, nonceSignature: nonceSignature, userId: userId) { request in
+            completion(request)
+        }
+        
+    }
+```
+
+```swift
+
+/*
+* programCode: Unique code of the program(Provided by matchMove).
+* clientId : Unique id of the client(Provided by matchMove).
+* apiKey: Key for api authentication (Provided by matchMove).
+* apiSecret : Secret for api authentication (Provided by matchMove).
+* bundleId : Bundle id of the app. 
+*/
+func setupMdesSDK() {
+        let bundleId = ""
+        let productCode =  ""
+        let mdesClientId = ""
+        let mdesApiKey = ""
+        let mdesApiSecret = ""
+        let mdesConfig = MdesConfig(programCode: productCode,
+                                    clientId: mdesClientId,
+                                    apiKey: mdesApiKey,
+                                    apiSecret: mdesApiSecret,
+                                    bundleId: bundleId)
+        
+        MdesSdk.configure(config: mdesConfig)
+        do {
+            self.mdesSdk = try MdesSdk.mdesSdk()
+        } catch let error as MdesSdkError {
+            switch error {
+            case .sdkNotSetUp:
+                print("MdesSdk not configured")
+            case .appleWalletUnavailable(let errorMsg):
+                print("appleWalletUnavailable \(errorMsg)")
+            }
+            self.mdesSdk = nil
+        } catch {
+            self.mdesSdk = nil
+        }
+    }
+
+```
+
+**Create App Group Manager Class(To share data between App and Extension)**
+
+```swift
+import Foundation
+
+// Set the extension's app group ID.
+let appGroupID: String = "group.<teamid>.applewallet"
+
+// Optional: Create an object that can interact with the file system
+// within the app group container, to access persistable data within files.
+let appGroupSharedContainerDirectory: URL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroupID)!
+
+// Create an object that can connect to the user's defaults
+// database within the app group container.
+let appGroupSharedDefaults: UserDefaults = UserDefaults(suiteName: appGroupID)!
+
+
+```
+**References:**
+
+PKIssuerProvisioningExtensionStatus - [PKIssuerProvisioningExtensionStatus | Apple Developer Documentation  ](https://developer.apple.com/documentation/passkit/pkissuerprovisioningextensionstatus)
+
+Demo Project from Apple Documentation - [Implementing Wallet Extensions | Apple Developer Documentation ](https://developer.apple.com/documentation/passkit/implementing-wallet-extensions)
+
+---
 
 ### Wallet UI Extension
 
@@ -640,6 +810,11 @@ struct WUIExtView: View {
     }
 }
 ```
+
+
+**Reference**:
+
+PKIssuerProvisioningExtensionAuthorizationResult - [PKIssuerProvisioningExtensionAuthorizationResult | Apple Developer Documentation](https://developer.apple.com/documentation/passkit/pkissuerprovisioningextensionauthorizationresult)
 
 ---
 
